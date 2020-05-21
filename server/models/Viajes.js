@@ -3,6 +3,11 @@ const Sequelize = require('sequelize');
 const db = require('../config/database');
 
 const Viaje = db.define('viaje', {
+     id: {
+          type: Sequelize.INTEGER,
+          primaryKey: true,
+          autoIncrement: true
+     },
      titulo :{
           type: Sequelize.STRING
      },
